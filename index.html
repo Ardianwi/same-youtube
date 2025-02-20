@@ -3,28 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Name Tag Semantic HTML</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/favicon_32x32.png" />
+    <title>Youtube</title>
   </head>
   <body>
     <nav>
       <div class="nav__sidebar">
-        <div class="nav__sidebar-menu"></div>
+        <div class="nav__sidebar-menu">
+          <a href=""> <img src="/img/menu.svg" alt="" /></a>
+        </div>
         <!--sidebar-menu-->
-        <div class="nav__sidebar-logo"></div>
+        <div class="nav__sidebar-logo">
+          <div class="nav__sidebar-logo-img">
+            <a href=""> <img src="/img/logo.svg" alt="" /></a>
+          </div>
+          <div class="nav__sidebar-logo-title"><a href="">Youtube</a></div>
+        </div>
         <!--sidebar-logo-->
       </div>
       <div class="nav__main">
-        <div class="nav__main-search"></div>
+        <div class="nav__main-search"><input type="text" /></div>
         <!--main-searching-->
-        <div class="nav__main-mic"></div>
+        <div class="nav__main-mic"><img src="/img/mic.svg" alt="" /></div>
         <!--microfon-->
       </div>
       <div class="nav__aside">
-        <div class="nav__aside-create"></div>
+        <div class="nav__aside-create">
+          <div class="nav__aside-create-img">
+            <img src="/img/plus.png" alt="" />
+          </div>
+        </div>
         <!--create channels-->
-        <div class="nav__aside-notif"></div>
+        <div class="nav__aside-notif"><img src="/img/bell.png" alt="" /></div>
         <!--notification-->
-        <div class="nav__aside-profile"></div>
+        <div class="nav__aside-profile">
+          <img src="/img/profile.png" alt="" />
+        </div>
         <!--profile user-->
       </div>
     </nav>
