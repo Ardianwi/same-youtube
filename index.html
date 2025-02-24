@@ -4,50 +4,314 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/img/favicon_32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="/img/favicon_32x32.png" />
+
     <title>Youtube</title>
   </head>
   <body>
     <nav>
       <div class="nav__sidebar">
         <div class="nav__sidebar-menu">
-          <a href=""> <img src="/img/menu.svg" alt="" /></a>
+          <a href=""><img src="/img/menu.svg" alt="" /></a>
         </div>
-        <!--sidebar-menu-->
         <div class="nav__sidebar-logo">
-          <div class="nav__sidebar-logo-img">
-            <a href=""> <img src="/img/logo.svg" alt="" /></a>
+          <div class="nav__sidebar-img">
+            <a href=""><img src="/img/logo.svg" alt="" /></a>
           </div>
-          <div class="nav__sidebar-logo-title"><a href="">Youtube</a></div>
+          <div class="nav__sidebar-title"><a href="">Youtube</a></div>
         </div>
-        <!--sidebar-logo-->
       </div>
-      <div class="nav__main">
-        <div class="nav__main-search"><input type="text" /></div>
-        <!--main-searching-->
-        <div class="nav__main-mic"><img src="/img/mic.svg" alt="" /></div>
-        <!--microfon-->
+      <div class="nav__menu">
+        <div class="nav_menu-ipt">
+          <div class="nav__menu-input">
+            <input type="text" placeholder="Telusuri" />
+          </div>
+          <div class="nav__menu-input-btn">
+            <button class="nav__menu-input-search">
+              <img src="/img/search.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="nav__menu-mic"><img src="/img/mic.svg" alt="" /></div>
       </div>
       <div class="nav__aside">
-        <div class="nav__aside-create">
-          <div class="nav__aside-create-img">
-            <img src="/img/plus.png" alt="" />
+        <div class="nav__aside-right">
+          <div class="nav__aside-create">
+            <div class="nav__aside-create-img">
+              <img src="/img/plus.png" alt="" />
+            </div>
+            <div class="nav__aside-create-title">Create</div>
+          </div>
+          <div class="nav__aside-notification">
+            <img src="/img/bell.png" alt="" />
           </div>
         </div>
-        <!--create channels-->
-        <div class="nav__aside-notif"><img src="/img/bell.png" alt="" /></div>
-        <!--notification-->
         <div class="nav__aside-profile">
           <img src="/img/profile.png" alt="" />
         </div>
-        <!--profile user-->
       </div>
     </nav>
+    <!-- navigation -->
+    <!-- Container Full Open -->
+    <div class="container-full">
+      <aside>
+        <div class="container-full__aside-home">
+          <div class="container-full__aside__home-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_home-title">Home</div>
+        </div>
+        <!--Home Aside-->
+        <div class="container-full__aside-shorts">
+          <div class="container-full__aside__shorts-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_shorts-title">Shorts</div>
+        </div>
+        <!--Shorts Aside-->
+        <div class="container-full__aside-subcription">
+          <div class="container-subcription-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_subcription-title">Subcribtion</div>
+        </div>
+        <!--Subcription-->
+        <hr />
+        <div class="container-full__aside-anda">
+          <div class="container-anda-aside">Anda</div>
+          <div class="container-full__aside_anda-title">></div>
+        </div>
+        <!-- Anda Aside -->
+        <div class="container-full__aside-history">
+          <div class="container-history-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_history-title">History</div>
+        </div>
+        <!-- Histori -->
+        <div class="container-full__aside-playlist">
+          <div class="container-playlist-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_playlist-title">Playlist</div>
+        </div>
+        <!-- Playlist -->
+        <div class="container-full__aside-video-anda">
+          <div class="container-video-anda-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_video-anda-title">Video Anda</div>
+        </div>
+        <!-- Video Anda -->
+        <div class="container-full__aside-kursus-anda">
+          <div class="container-kursus-anda-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_kursus-anda-title">Kursus Anda</div>
+        </div>
+        <!-- Kursus Anda -->
+        <div class="container-full__aside-tonton-nanti">
+          <div class="container-tonton-nanti-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_tonton-nanti-title">
+            Tonton nanti
+          </div>
+        </div>
+        <!-- tonton nanti Close -->
+        <div class="container-full__aside-video-yang-disukai">
+          <div class="container-video-yang-disukai-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_video-yang-disukai-title">
+            Video Yang Disukai
+          </div>
+        </div>
+        <!-- Video Yang Disukai Close -->
+        <div class="container-full__aside-download">
+          <div class="container-download-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_download-title">Donwload</div>
+        </div>
+        <!-- Download -->
+        <hr />
+        <p class="aside-subcription">Subcription</p>
+        <!-- Subcription -->
+        <div class="container-full__aside-soothing-relaxation">
+          <div class="container-soothing-relaxation-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_soothing-relaxation-title">
+            Soothing Relaxation
+          </div>
+          <div class="aside-live"><img src="/sidebar/live.png" alt="" /></div>
+        </div>
+        <!-- Soothing Relaxation -->
+        <div class="container-full__aside-mamank-kuliner">
+          <div class="container-mamank-kuliner-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_mamank-kuliner-title">
+            Mamank Kukiner
+          </div>
+          <div class="aside-live">*</div>
+        </div>
+        <!-- Mamank Kuliner -->
+        <div class="container-full__aside-tanboykun">
+          <div class="container-mamank-kuliner-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_mamank-kuliner-title">
+            tanboy kun
+          </div>
+          <div class="aside-live">*</div>
+        </div>
+        <!-- Tanboykun -->
+        <div class="container-full__aside-pecahtelur">
+          <div class="container-pecahtelur-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_pecahtelur-title">pecah telur</div>
+          <div class="aside-live">*</div>
+        </div>
+        <!-- Pecah Telur -->
+        <div class="container-full__aside-sony-musik">
+          <div class="container-sony-musik-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_sony-musik-title">
+            Sony Music Enterteinment
+          </div>
+          <div class="aside-live">*</div>
+        </div>
+        <!-- Sony Music Enter Tainment -->
+        <div class="container-full__aside-tasya-evo">
+          <div class="container-tasya-evo-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_tasya-evo-title">TasyaVEVO</div>
+          <div class="aside-live">*</div>
+        </div>
+        <!-- Tasya Evo -->
+        <div class="container-full__aside-doddy">
+          <div class="container-doddy-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_doddy-title">
+            Doddy Bicara Investasi
+          </div>
+          <div class="aside-live">*</div>
+        </div>
+        <!-- Doddy Bicara Inve -->
+        <div class="container-full__aside-seemore">
+          <div class="container-seemore-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_seemore-title">
+            Tampilkan Lebih Banyak
+          </div>
+        </div>
+        <!-- Tampilkan Lebih Banyak -->
+        <hr />
+        <p class="aside-explorasi">Explorasi</p>
+        <div class="container-full__aside-trending">
+          <div class="container-full__aside__trending-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_trending-title">Trending</div>
+        </div>
+        <!-- Trending -->
+        <div class="container-full__aside-music">
+          <div class="container-full__aside__music-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_music-title">Musik</div>
+        </div>
+        <!--Musik  -->
+        <div class="container-full__aside-film">
+          <div class="container-full__aside__film-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_film-title">Film</div>
+        </div>
+        <!-- Film -->
+        <div class="container-full__aside-game">
+          <div class="container-full__aside__game-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_game-title">Game</div>
+        </div>
+        <!-- Game -->
+        <div class="container-full__aside-berita">
+          <div class="container-full__aside__berita-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_berita-title">Berita</div>
+        </div>
+        <!-- Berita -->
+        <div class="container-full__aside-olahraga">
+          <div class="container-full__aside__olahraga-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_olahraga-title">Olahraga</div>
+        </div>
+        <!-- Olahraga -->
+        <hr />
+        <p class="aside-seemore">Lainnya di Youtube</p>
+        <!-- Lainnya di Youtube -->
+        <div class="container-full__aside-youtube-premium">
+          <div class="container-full__aside__youtube-premium-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_olahraga-title">
+            Youtube Premium
+          </div>
+        </div>
+        <!-- Youtube Premium -->
+        <div class="container-full__aside-youtube-studio">
+          <div class="container-full__aside__youtube-studio-aside">
+            <img src="/sidebar/home.png" alt="" />
+          </div>
+          <div class="container-full__aside_youtube-studio-title">
+            Youtube Studio
+          </div>
+        </div>
+        <!-- Youtube Studio -->
+      </aside>
+      <!-- Aside Close -->
+      <!-- main Open -->
+      <main>
+        <div class="category">
+          <div class="border1">Semua</div>
+          <div class="border2">Musik</div>
+          <div class="border2">Live</div>
+          <div class="border2">Game</div>
+          <div class="border2">Mix</div>
+          <div class="border2">Memasak</div>
+          <div class="border2">Pariwisata</div>
+          <div class="border2">Game Petualangan Aksi</div>
+          <div class="border2">Baru Di Upload</div>
+          <div class="border2">Ditonton</div>
+          <div class="border2">Baru Untuk Anda</div>
+        </div>
+        <!-- category close -->
+        <!-- container-grid open -->
+        <div class="cointainer-grid">
+          <div class="container-grid1"></div>
+          <div class="container-grid2"></div>
+          <div class="container-grid3"></div>
+          <div class="container-grid4"></div>
+        </div>
+        <!-- container-grid close -->
+      </main>
+      <!-- Main Close -->
+    </div>
   </body>
 </html>
