@@ -829,16 +829,47 @@ main {
 }
 .cointainer-grid {
   display: grid;
-  grid-template-areas: "grid1 grid2 grid3 grid4";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "grid1 grid2 grid3 grid4 grid5";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   height: 100vh;
 }
 
 .container-grid1 {
   grid-area: grid1;
+  display: flex;
+  flex-direction: column;
 }
 
-.container-grid2 {
+.container-grid1-img img {
+  width: 280px;
+  height: 160px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.container-grid1-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.container-grid1-title-user-img img {
+  width: 25px;
+  height: 25px;
+}
+.container-grid1-title-user-title h1 {
+  font-size: 11px;
+}
+.container__grid1-name-channel p {
+  font-size: 10px;
+  margin-left: 35px;
+}
+
+.container-grid1-title-user-title-img img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+/* Video youtube 1 */
+.cointainer-grid .container-grid2 {
   grid-column: grid2;
 }
 
@@ -847,4 +878,6 @@ main {
 }
 .container-grid4 {
   grid-area: grid4;
+}
+.cointainer-grid5 {
 }
