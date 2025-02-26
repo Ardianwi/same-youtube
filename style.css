@@ -12,6 +12,7 @@ body {
   font-weight: <weight>;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  position: relative;
 }
 /* body close */
 /* Nav Open */
@@ -22,6 +23,12 @@ nav {
   justify-content: space-between;
   padding: 0 20px;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
+  width: 98%;
 }
 
 nav img {
@@ -146,11 +153,13 @@ nav img {
   grid-template-areas: "aside main";
   grid-template-columns: 0.5fr 4fr;
   height: 95vh;
+  margin-top: 60px;
 }
 
 aside {
   grid-area: aside;
   padding: 0 20px;
+  position: fixed;
 }
 /* Home Open Aside */
 .container-full__aside-home {
