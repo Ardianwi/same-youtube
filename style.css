@@ -12,11 +12,19 @@ body {
   font-weight: <weight>;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+  position: relative;
 }
 /* body close */
 /* Nav Open */
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Bisa disesuaikan */
+  z-index: 1000; /* Biar selalu di atas elemen lain */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan biar lebih jelas */
   height: 45px;
   display: flex;
   justify-content: space-between;
@@ -151,8 +159,12 @@ nav img {
 aside {
   grid-area: aside;
   padding: 0 20px;
+  position: fixed;
 }
 /* Home Open Aside */
+.container-full {
+  margin-top: 50px;
+}
 .container-full__aside-home {
   gap: 10px;
   display: flex;
@@ -418,17 +430,23 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   box-sizing: border-box;
+  font-size: 8px;
 }
 .container-full__aside-soothing-relaxation:hover {
   background-color: #dedede;
 }
-.container-full__aside_soothing-relaxation-title {
-  font-size: 12px;
+.container-soothing-relaxation-aside-title {
+  margin-left: 10px;
+}
+.container-soothing-relaxation-aside {
+  display: flex;
+  align-items: center;
 }
 
 .container-soothing-relaxation-aside img {
   width: 15px;
   height: 15px;
+  border-radius: 50%;
 }
 .container-full__aside_soothing-relaxation-title {
   font-size: 8px;
@@ -447,17 +465,23 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
-.container-full__aside-soothing-relaxation:hover {
+.container-full__aside-mamank-kuliner:hover {
   background-color: #dedede;
 }
-.container-full__aside_mamank-kuliner-title {
-  font-size: 5px;
+.container-full__aside-mamank-kuliner-title {
+  margin-left: 10px;
+}
+.container-mamank-kuliner-aside {
+  display: flex;
+  align-items: center;
 }
 
 .container-mamank-kuliner-aside img {
   width: 13px;
   height: 13px;
+  border-radius: 50%;
 }
 .container-full__aside_mamank-kuliner-title {
   font-size: 8px;
@@ -471,17 +495,22 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-tanboykun:hover {
   background-color: #dedede;
 }
-.container-full__aside_tanboykun-title {
-  font-size: 5px;
+.container-full__aside_mamank-kuliner-title {
+  margin-left: 10px;
 }
-
+.container-tanboykun-aside {
+  display: flex;
+  align-items: center;
+}
 .container-tanboykun-aside img {
   width: 13px;
   height: 13px;
+  border-radius: 50%;
 }
 .container-full__aside_tanboykun-title {
   font-size: 8px;
@@ -495,14 +524,18 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-pecahtelur:hover {
   background-color: #dedede;
 }
 .container-full__aside_pecahtelur-title {
-  font-size: 5px;
+  margin-left: 10px;
 }
-
+.container-pecahtelur-aside {
+  display: flex;
+  align-items: center;
+}
 .container-pecahtelur-aside img {
   width: 13px;
   height: 13px;
@@ -519,21 +552,24 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-sony-musik:hover {
   background-color: #dedede;
 }
 .container-full__aside_sony-musik-title {
-  font-size: 5px;
+  margin-left: 10px;
 }
-
+.container-sony-musik-aside {
+  display: flex;
+  align-items: center;
+}
 .container-sony-musik-aside img {
   width: 13px;
   height: 13px;
+  border-radius: 50%;
 }
-.container-full__aside_sony-musik-title {
-  font-size: 8px;
-}
+
 /* Sony Musik Entertainment */
 .container-full__aside-tasya-evo {
   gap: 10px;
@@ -543,15 +579,21 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-tasya-evo:hover {
   background-color: #dedede;
 }
 .container-full__aside_tasya-evo-title {
-  font-size: 5px;
+  margin-left: 10px;
 }
 
+.container-tasya-evo-aside {
+  display: flex;
+  align-items: center;
+}
 .container-tasya-evo-aside img {
+  border-radius: 50%;
   width: 13px;
   height: 13px;
 }
@@ -591,21 +633,25 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-doddy:hover {
   background-color: #dedede;
 }
 .container-full__aside_doddy-title {
-  font-size: 5px;
+  margin-left: 10px;
+}
+.container-doddy-aside {
+  display: flex;
+  align-items: center;
 }
 
 .container-doddy-aside img {
+  border-radius: 50%;
   width: 13px;
   height: 13px;
 }
-.container-full__aside_doddy-title {
-  font-size: 8px;
-}
+
 /* Doddy Bicara Investasi */
 .container-full__aside-seemore {
   gap: 10px;
@@ -621,7 +667,10 @@ hr {
 .container-full__aside_seemore-title {
   font-size: 5px;
 }
-
+.container-seemore-aside {
+  display: flex;
+  align-items: center;
+}
 .container-seemore-aside img {
   width: 13px;
   height: 13px;
@@ -806,9 +855,11 @@ main {
 }
 .category {
   display: flex;
+  width: 100%;
   gap: 10px;
   align-items: center;
   font-size: 10px;
+  background-color: #fff;
 }
 
 .border1 {
@@ -832,6 +883,7 @@ main {
   grid-template-areas: "grid1 grid2 grid3 grid4 grid5";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   height: 100vh;
+  margin-top: 20px;
 }
 
 .container-grid1 {
