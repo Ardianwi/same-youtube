@@ -153,7 +153,8 @@ nav img {
   grid-template-areas: "aside main";
   grid-template-columns: 0.5fr 4fr;
   height: 95vh;
-  margin-top: 60px;
+  margin-top: 5git0px;
+  margin-top: 3rem;
 }
 
 aside {
