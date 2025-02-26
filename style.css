@@ -28,7 +28,8 @@ nav {
   left: 0;
   z-index: 1000;
   background-color: #fff;
-  width: 98%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav img {
@@ -41,10 +42,35 @@ nav img {
 .nav__sidebar {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .nav__sidebar-logo {
   display: flex;
+  align-items: center;
+}
+.nav__sidebar-img,
+.nav__sidebar-title {
+  display: flex;
+  align-items: center;
+}
+.nav__sidebar-menu {
+  display: flex;
+  align-items: center;
+}
+.nav__sidebar-menu a {
+  display: flex;
+  align-items: center;
+}
+.nav__sidebar-logo img {
+  display: flex;
   gap: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.nav__sidebar-title img {
+  width: 55px;
+  height: 25px;
 }
 .nav__sidebar-title a {
   text-decoration: none;
@@ -182,7 +208,7 @@ aside {
   height: 13px;
 }
 .container-full__aside_home-title {
-  font-size: 12px;
+  font-size: 8px;
 }
 /* Home Close aside */
 /* Shorts Open aside */
@@ -433,20 +459,25 @@ hr {
   background-color: #dedede;
 }
 .container-full__aside_soothing-relaxation-title {
-  font-size: 12px;
+  font-size: 8px;
+  margin-left: 5px;
+}
+
+.container-soothing-relaxation-aside {
+  display: flex;
+  align-items: center;
 }
 
 .container-soothing-relaxation-aside img {
   width: 15px;
   height: 15px;
-}
-.container-full__aside_soothing-relaxation-title {
-  font-size: 8px;
+  border-radius: 50%;
 }
 
 .aside-live img {
   width: 12px;
   height: 12px;
+  border-radius: 50%;
 }
 /* Soothing Relaxation */
 .container-full__aside-mamank-kuliner {
@@ -457,20 +488,24 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-soothing-relaxation:hover {
   background-color: #dedede;
 }
-.container-full__aside_mamank-kuliner-title {
-  font-size: 5px;
-}
 
+.container-mamank-kuliner-aside {
+  display: flex;
+  align-items: center;
+}
 .container-mamank-kuliner-aside img {
   width: 13px;
   height: 13px;
+  border-radius: 50%;
 }
 .container-full__aside_mamank-kuliner-title {
   font-size: 8px;
+  margin-left: 5px;
 }
 /* mamank kuliner */
 .container-full__aside-tanboykun {
@@ -481,6 +516,7 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-tanboykun:hover {
   background-color: #dedede;
@@ -488,13 +524,15 @@ hr {
 .container-full__aside_tanboykun-title {
   font-size: 5px;
 }
+.container-tanboykun-aside {
+  display: flex;
+  align-items: center;
+}
 
 .container-tanboykun-aside img {
   width: 13px;
   height: 13px;
-}
-.container-full__aside_tanboykun-title {
-  font-size: 8px;
+  border-radius: 50%;
 }
 /* Tanboykun */
 .container-full__aside-pecahtelur {
@@ -505,21 +543,25 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-pecahtelur:hover {
   background-color: #dedede;
 }
 .container-full__aside_pecahtelur-title {
-  font-size: 5px;
+  margin-left: 5px;
 }
 
+.container-pecahtelur-aside {
+  display: flex;
+  align-items: center;
+}
 .container-pecahtelur-aside img {
   width: 13px;
   height: 13px;
+  border-radius: 50%;
 }
-.container-full__aside_pecahtelur-title {
-  font-size: 8px;
-}
+
 /* Pecah Telur */
 .container-full__aside-sony-musik {
   gap: 10px;
@@ -529,17 +571,22 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-sony-musik:hover {
   background-color: #dedede;
 }
 .container-full__aside_sony-musik-title {
-  font-size: 5px;
+  margin-left: 5px;
 }
-
+.container-sony-musik-aside {
+  display: flex;
+  align-items: center;
+}
 .container-sony-musik-aside img {
   width: 13px;
   height: 13px;
+  border-radius: 50%;
 }
 .container-full__aside_sony-musik-title {
   font-size: 8px;
@@ -553,17 +600,23 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-tasya-evo:hover {
   background-color: #dedede;
 }
 .container-full__aside_tasya-evo-title {
-  font-size: 5px;
+  margin-left: 5px;
+}
+.container-tasya-evo-aside {
+  display: flex;
+  align-items: center;
 }
 
 .container-tasya-evo-aside img {
   width: 13px;
   height: 13px;
+  border-radius: 50%;
 }
 .container-full__aside_tasya-evo-title {
   font-size: 8px;
@@ -577,20 +630,26 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-tasya-evo:hover {
   background-color: #dedede;
 }
 .container-full__aside_tasya-evo-title {
-  font-size: 5px;
+  margin-left: 5px;
+}
+.container-tasya-evo-aside {
+  display: flex;
+  align-items: center;
 }
 
 .container-tasya-evo-aside img {
   width: 13px;
   height: 13px;
+  border-radius: 50%;
 }
 .container-full__aside_tasya-evo-title {
-  font-size: 8px;
+  margin-left: 5px;
 }
 /* Tasya Evo */
 .container-full__aside-doddy {
@@ -601,21 +660,24 @@ hr {
   border-radius: 3px;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 8px;
 }
 .container-full__aside-doddy:hover {
   background-color: #dedede;
 }
 .container-full__aside_doddy-title {
-  font-size: 5px;
+  margin-left: 5px;
 }
-
+.container-doddy-aside {
+  display: flex;
+  align-items: center;
+}
 .container-doddy-aside img {
   width: 13px;
   height: 13px;
+  border-radius: 50%;
 }
-.container-full__aside_doddy-title {
-  font-size: 8px;
-}
+
 /* Doddy Bicara Investasi */
 .container-full__aside-seemore {
   gap: 10px;
