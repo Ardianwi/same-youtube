@@ -18,13 +18,6 @@ body {
 /* Nav Open */
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white; /* Bisa disesuaikan */
-  z-index: 1000; /* Biar selalu di atas elemen lain */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Efek bayangan biar lebih jelas */
   height: 45px;
   display: flex;
   justify-content: space-between;
@@ -196,9 +189,6 @@ aside {
   position: fixed;
 }
 /* Home Open Aside */
-.container-full {
-  margin-top: 50px;
-}
 .container-full__aside-home {
   gap: 10px;
   display: flex;
@@ -464,22 +454,15 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   box-sizing: border-box;
-  font-size: 8px;
 }
 .container-full__aside-soothing-relaxation:hover {
   background-color: #dedede;
 }
-<<<<<<< HEAD
 .container-full__aside_soothing-relaxation-title {
   font-size: 8px;
   margin-left: 5px;
 }
 
-=======
-.container-soothing-relaxation-aside-title {
-  margin-left: 10px;
-}
->>>>>>> accd4fe (make same youtube)
 .container-soothing-relaxation-aside {
   display: flex;
   align-items: center;
@@ -489,12 +472,6 @@ hr {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-<<<<<<< HEAD
-=======
-}
-.container-full__aside_soothing-relaxation-title {
-  font-size: 8px;
->>>>>>> accd4fe (make same youtube)
 }
 
 .aside-live img {
@@ -513,19 +490,9 @@ hr {
   justify-content: space-between;
   font-size: 8px;
 }
-.container-full__aside-mamank-kuliner:hover {
+.container-full__aside-soothing-relaxation:hover {
   background-color: #dedede;
 }
-<<<<<<< HEAD
-=======
-.container-full__aside-mamank-kuliner-title {
-  margin-left: 10px;
-}
-.container-mamank-kuliner-aside {
-  display: flex;
-  align-items: center;
-}
->>>>>>> accd4fe (make same youtube)
 
 .container-mamank-kuliner-aside {
   display: flex;
@@ -554,31 +521,18 @@ hr {
 .container-full__aside-tanboykun:hover {
   background-color: #dedede;
 }
-.container-full__aside_mamank-kuliner-title {
-  margin-left: 10px;
+.container-full__aside_tanboykun-title {
+  font-size: 5px;
 }
-.container-tanboykun-aside {
-  display: flex;
-  align-items: center;
-}
-<<<<<<< HEAD
 .container-tanboykun-aside {
   display: flex;
   align-items: center;
 }
 
-=======
->>>>>>> accd4fe (make same youtube)
 .container-tanboykun-aside img {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-<<<<<<< HEAD
-=======
-}
-.container-full__aside_tanboykun-title {
-  font-size: 8px;
->>>>>>> accd4fe (make same youtube)
 }
 /* Tanboykun */
 .container-full__aside-pecahtelur {
@@ -595,7 +549,6 @@ hr {
   background-color: #dedede;
 }
 .container-full__aside_pecahtelur-title {
-<<<<<<< HEAD
   margin-left: 5px;
 }
 
@@ -603,14 +556,6 @@ hr {
   display: flex;
   align-items: center;
 }
-=======
-  margin-left: 10px;
-}
-.container-pecahtelur-aside {
-  display: flex;
-  align-items: center;
-}
->>>>>>> accd4fe (make same youtube)
 .container-pecahtelur-aside img {
   width: 13px;
   height: 13px;
@@ -632,11 +577,7 @@ hr {
   background-color: #dedede;
 }
 .container-full__aside_sony-musik-title {
-<<<<<<< HEAD
   margin-left: 5px;
-=======
-  margin-left: 10px;
->>>>>>> accd4fe (make same youtube)
 }
 .container-sony-musik-aside {
   display: flex;
@@ -647,7 +588,9 @@ hr {
   height: 13px;
   border-radius: 50%;
 }
-
+.container-full__aside_sony-musik-title {
+  font-size: 8px;
+}
 /* Sony Musik Entertainment */
 .container-full__aside-tasya-evo {
   gap: 10px;
@@ -663,23 +606,14 @@ hr {
   background-color: #dedede;
 }
 .container-full__aside_tasya-evo-title {
-<<<<<<< HEAD
   margin-left: 5px;
 }
 .container-tasya-evo-aside {
   display: flex;
   align-items: center;
-=======
-  margin-left: 10px;
->>>>>>> accd4fe (make same youtube)
 }
 
-.container-tasya-evo-aside {
-  display: flex;
-  align-items: center;
-}
 .container-tasya-evo-aside img {
-  border-radius: 50%;
   width: 13px;
   height: 13px;
   border-radius: 50%;
@@ -732,18 +666,13 @@ hr {
   background-color: #dedede;
 }
 .container-full__aside_doddy-title {
-<<<<<<< HEAD
   margin-left: 5px;
-=======
-  margin-left: 10px;
->>>>>>> accd4fe (make same youtube)
 }
 .container-doddy-aside {
   display: flex;
   align-items: center;
 }
 .container-doddy-aside img {
-  border-radius: 50%;
   width: 13px;
   height: 13px;
   border-radius: 50%;
@@ -764,10 +693,7 @@ hr {
 .container-full__aside_seemore-title {
   font-size: 5px;
 }
-.container-seemore-aside {
-  display: flex;
-  align-items: center;
-}
+
 .container-seemore-aside img {
   width: 13px;
   height: 13px;
@@ -952,11 +878,9 @@ main {
 }
 .category {
   display: flex;
-  width: 100%;
   gap: 10px;
   align-items: center;
   font-size: 10px;
-  background-color: #fff;
 }
 
 .border1 {
@@ -980,7 +904,6 @@ main {
   grid-template-areas: "grid1 grid2 grid3 grid4 grid5";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   height: 100vh;
-  margin-top: 20px;
 }
 
 .container-grid1 {
